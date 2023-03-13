@@ -1,0 +1,60 @@
+### Get user profile 1
+GET http://localhost:8080/users/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVc2VyU2VydmljZUNsaWVudFRlc3RFbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2Njk2NDAzODcsImV4cCI6MTY2OTY0Mzk4N30.ofXZIMkAC5nlDdQGrQFnZEwo_1dfP67qvoOyO_oJJHVDx8cyvWtmDHKPdr6OkerxdbAl7rO1W8vgJLdbu4ucxg
+Content-Type: application/json
+
+### Get user profile 2
+GET http://localhost:8080/users/3
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVc2VyU2VydmljZUNsaWVudDJAb3V0bG9vay5jb20iLCJpYXQiOjE2NjkzODIwNzQsImV4cCI6MTY2OTM4NTY3NH0.nmbtBHwW_Iiskrq5PE6RzGkLmj8yGVGhPIHNc_mSSnUcgO9u0u-E_IHqo7Km98wtKfqJjuJr7uI2mHJ5UPJAwg
+Content-Type: application/json
+
+### Update user profile 1
+PUT http://localhost:8080/users/2
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVc2VyU2VydmljZUNsaWVudFRlc3RFbWFpbEBnbWFpbC5jb20iLCJpYXQiOjE2NjkzODE5NzgsImV4cCI6MTY2OTM4NTU3OH0.hrktM59ydiEYL86PnA09hF63HPL_XefhBNOvjTVU-RtBdq4ODoRm997hh1IKs7mVhaHu0OCzXcOH5p3Bq6FLCw
+Content-Type: application/json
+
+{
+  "email": "UserServiceClientTestEmail@gmail.com",
+  "firstName": "Aragorn",
+  "lastName": "Son of Aratorn",
+  "age": 65,
+  "driverLicense": "1666ABN5"
+}
+
+### Update user profile 2
+PUT http://localhost:8080/users/3
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVc2VyU2VydmljZUNsaWVudDJAb3V0bG9vay5jb20iLCJpYXQiOjE2NjkzODIwNzQsImV4cCI6MTY2OTM4NTY3NH0.nmbtBHwW_Iiskrq5PE6RzGkLmj8yGVGhPIHNc_mSSnUcgO9u0u-E_IHqo7Km98wtKfqJjuJr7uI2mHJ5UPJAwg
+Content-Type: application/json
+
+{
+  "email": "UserClientTestEmail@gmail.com",
+  "firstName": "Legolas",
+  "lastName": "Son on Tranduil",
+  "age": 42,
+  "driverLicense": "AA1938VK"
+}
+
+### Change user 1 status
+PATCH http://localhost:8080/users/status/2?status=disable
+Authorization: Bearer
+Content-type: application/json
+
+### top up user 1
+PATCH http://localhost:8080/users/tobalance/2?balanceIncrement=1000.69
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVc2VyU2VydmljZUdsb2JhbEFkbWluQGRyaXZlZHluYW1pY3MuY29tIiwiaWF0IjoxNjY5NjQwNDI3LCJleHAiOjE2Njk2NDQwMjd9.f3xHAkB77u6cMfJ2k_M_n6MD16zazAwvd_0IMz8OASev9QPmpk7Qh1Y0A-glvHWKQaAPkqGkR3MF9JwjJzXc1Q
+Content-type: application/json
+
+### Take money from user 1
+PATCH http://localhost:8080/users/frombalance/2?balanceDecrement=512.5638
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVc2VyU2VydmljZUdsb2JhbEFkbWluQGRyaXZlZHluYW1pY3MuY29tIiwiaWF0IjoxNjY5NjQwNDI3LCJleHAiOjE2Njk2NDQwMjd9.f3xHAkB77u6cMfJ2k_M_n6MD16zazAwvd_0IMz8OASev9QPmpk7Qh1Y0A-glvHWKQaAPkqGkR3MF9JwjJzXc1Q
+Content-type: application/json
+
+### top up user 2
+PATCH http://localhost:8080/users/tobalance/3?balanceIncrement=1000.69
+Authorization: Bearer
+Content-type: application/json
+
+### Take money from user 2
+PATCH http://localhost:8080/users/frombalance/3?balanceDecrement=512.5638
+Authorization: Bearer eyJhbGciOiJIUzUxMiJ9.eyJzdWIiOiJVc2VyU2VydmljZUdsb2JhbEFkbWluQGRyaXZlZHluYW1pY3MuY29tIiwiaWF0IjoxNjY5NjQwNDI3LCJleHAiOjE2Njk2NDQwMjd9.f3xHAkB77u6cMfJ2k_M_n6MD16zazAwvd_0IMz8OASev9QPmpk7Qh1Y0A-glvHWKQaAPkqGkR3MF9JwjJzXc1Q
+Content-type: application/json

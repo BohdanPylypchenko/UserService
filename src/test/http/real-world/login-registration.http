@@ -1,0 +1,60 @@
+### real-world valid register 1
+POST http://localhost:8080/registration
+Content-Type: application/json
+
+{
+  "email": "UserServiceClientTestEmail@gmail.com",
+  "password": "very very secret password",
+  "repeatPassword": "very very secret password",
+  "firstName": "Bohdan",
+  "lastName": "Pylypchenko",
+  "age": 19,
+  "driverLicense": "fdf234sdr",
+  "roles": [
+    "USER"
+  ]
+}
+
+### real-world valid register 2
+POST http://localhost:8080/registration
+Content-Type: application/json
+
+{
+  "email": "UserServiceClientTestEmail2@gmail.com",
+  "password": "very very secret password",
+  "repeatPassword": "very very secret password",
+  "firstName": "Victor",
+  "lastName": "Zweimister",
+  "age": 29,
+  "driverLicense": "fdf234sdr",
+  "roles": [
+    "USER"
+  ]
+}
+
+### real-world valid login 1
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "UserServiceClientTestEmail@gmail.com",
+  "password": "very very secret password"
+}
+
+### real-world valid login 2
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "UserServiceClientTestEmail2@gmail.com",
+  "password": "very very secret password"
+}
+
+### real-word admin login
+POST http://localhost:8080/login
+Content-Type: application/json
+
+{
+  "email": "UserServiceGlobalAdmin@drivedynamics.com",
+  "password": "adminpassword"
+}

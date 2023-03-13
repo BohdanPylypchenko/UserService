@@ -1,0 +1,3 @@
+These requests are intended to be used during demos.
+Don't expect them to work just by running them - first you need to have server, client emails, setup JWT by running
+specific request etc.
